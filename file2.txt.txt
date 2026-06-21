@@ -1,0 +1,63 @@
+- CREATE DATABASE temp1;
+-- DROP DATABASE temp1;
+-- DROP DATABASE temp2;
+-- create database temp2;
+
+
+
+CREATE DATABASE college;
+-- CREATE DATABASE IF NOT EXISTS college;  BEST WAY TO PREVENT ERROR
+-- DROP DATABASE IF EXISTS company;     BEST WAY TO PREVENT ERROR 
+
+
+USE college;
+
+CREATE TABLE student (
+ id INT PRIMARY KEY,
+ name VARCHAR(50),
+ age INT NOT NULL
+);
+
+-- INSERT INTO student VALUES(1,"Ritwik", 21);
+-- INSERT INTO student VALUES(2,"RAJ", 22);
+-- SELECT *FROM student;
+-- SHOW DATABASES;
+-- SHOW TABLES;
+
+DROP TABLE student;
+
+CREATE TABLE student(
+rollno INT PRIMARY KEY,
+name VARCHAR(40)
+);
+
+-- 	For multiple values
+INSERT INTO student 
+(rollno, name) VALUES
+(1, "Dravid"),
+(2, "Tendulkar"),
+(3, "Ganguly"),
+(4, "Laxman");
+
+-- For Single values
+-- INSERT INTO student VALUES(5, "Sehwag");
+SELECT *FROM student;
+
+
+-- PRACTICE PROBLEM:-
+CREATE DATABASE xyz_company;
+USE xyz_company;
+
+-- CREATE TABLE employee (
+-- -- id INT PRIMARY KEY,
+-- -- name VARCHAR(40),
+-- -- salary INT NOT NULL
+-- -- );
+
+-- INSERT INTO employee 
+-- (id, name, salary) VALUES
+-- (10,"RAM", 56000),
+-- (21,"SHYAM", 67000),
+-- (31,"MOHAN", 43000);
+
+-- SELECT *FROM employee;
